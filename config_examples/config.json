@@ -1,0 +1,26 @@
+{
+
+    "allowed_characters": {
+        "groups": {
+            "numbers": "0123456789",
+            "lowercase": "abcdefghijklmnopqrstuvwxyz",
+            "uppercase": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        }
+    },
+
+    "required_characters" : [
+        [2, "group", "numbers"],
+        [1, "group", "uppercase"]
+    ],
+
+    "violations" : {
+        "consecutive": 2,
+        "occurrence": 3,
+        "verboten": [
+            "password",
+            "topsecret",
+            "foobar",
+            "spam"
+        ]
+    }
+}
